@@ -1,3 +1,3 @@
 # didactic-waffle
-tak :parking:
+:parking:
 
