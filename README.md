@@ -1,3 +1,3 @@
 # didactic-waffle
-:parking:
+Własna aplikacja pod nazwą "filmy" w folderze Projekt2
 
