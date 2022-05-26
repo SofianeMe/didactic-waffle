@@ -1,0 +1,9 @@
+{% if rodzaj_list %}
+    <ul>
+    {% for rodzaj in film_list %}
+    <li><a href="/filmy/{{format_filmu.id}}">{{format_filmu }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No format_filmu are available.</p>
+{% endif %}
