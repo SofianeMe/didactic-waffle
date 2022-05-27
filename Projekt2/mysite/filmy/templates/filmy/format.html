@@ -1,7 +1,7 @@
 {% if format_filmu_list %}
     <ul>
     {% for format_filmu in format_filmu_list %}
-    <li><a href="/filmy/{{format_filmu.id}}">{{format_filmu }}</a></li>
+    <li><a href="/filmy/{{format_filmu.id}}">{{ format_filmu }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
