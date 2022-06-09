@@ -3,6 +3,7 @@ from . import views
 
 
 #format_filmu, cena, film, rodzaj
+
 app_name = 'filmy'
 urlpatterns = [
     path('',views.index, name='index'),
