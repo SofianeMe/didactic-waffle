@@ -1,7 +1,7 @@
 {% if rodzaj_list %}
     <ul>
-    {% for rodzaj in film_list %}
-    <li><a href="/filmy/{{format_filmu.id}}">{{format_filmu }}</a></li>
+    {% for rodzaj in rodzaj_list %}
+    <li><a href="/filmy/{{rodzaj.id}}">{{rodzaj }}</a></li>
     {% endfor %}
     </ul>
 {% else %}

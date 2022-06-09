@@ -5,6 +5,8 @@ from .models import format_filmu, rodzaj, cena, film
 from django.http import Http404
 from webbrowser import get
 from django.shortcuts import get_object_or_404, render
+from multiprocessing import context
+
 
 # Create your views here.
 
@@ -13,14 +15,14 @@ from django.shortcuts import get_object_or_404, render
 #viewsy do zmiany, templates tez
 
 def index(request):
-    index_list='format_filmu',#'rodzaj','cena','film'
+    index_list='format_filmu','rodzaj','cena','film',
     template=loader.get_template('filmy/index.html')
     context= {
         'index_list': index_list,
     }
     return HttpResponse(template.render(context,request))
 
-def rodzaj(request):
+def rodzajview(request):
     rodzaj_list=rodzaj.objects.all
     template=loader.get_template('filmy/rodzaj.html')
     context= {
@@ -28,7 +30,7 @@ def rodzaj(request):
     }
     return HttpResponse(template.render(context,request))
 
-def film(request):
+def filmview(request):
     film_list=film.objects.all
     template=loader.get_template('filmy/film.html')
     context= {
@@ -36,7 +38,7 @@ def film(request):
     }
     return HttpResponse(template.render(context,request))
 
-def format_filmu(request):
+def format_filmuview(request):
     format_filmu_list=format_filmu.objects.all
     template=loader.get_template('filmy/format_filmu.html')
     context= {
@@ -44,7 +46,7 @@ def format_filmu(request):
     }
     return HttpResponse(template.render(context,request))
 
-def cena(request):
+def cenaview(request):
     cena_list=cena.objects.all
     template=loader.get_template('filmy/cena.html')
     context= {
