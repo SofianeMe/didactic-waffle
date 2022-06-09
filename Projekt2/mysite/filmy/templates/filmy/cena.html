@@ -1,7 +1,9 @@
 {% if cena_list %}
     <ul>
-    {% for cena in cena_list %}
-    <li><a href="/filmy/{{cena.id}}">{{ cena }}</a></li>
+    {% for cenaview in cena_list %}
+    <li>
+        <a href="/filmy/{{ cenaview.id }}/">{{ cenaview }}</a>
+    </li>
     {% endfor %}
     </ul>
 {% else %}

@@ -1,7 +1,9 @@
 {% if film_list %}
     <ul>
-    {% for film in film_list %}
-    <li><a href="/filmy/{{film.id}}">{{ film }}</a></li>
+    {% for filmview in film_list %}
+    <li>
+        <a href="/filmy/{{filmview.id}}/">{{ filmview }}</a>
+    </li>
     {% endfor %}
     </ul>
 {% else %}

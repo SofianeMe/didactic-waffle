@@ -1,7 +1,9 @@
 {% if index_list %}
     <ul>
     {% for index in index_list %}
-    <li><a href="/filmy/{{index.id}}">{{index }}</a></li>
+    <li>
+        <a href="/filmy/{{ index.id }}/">{{index }}</a>
+    </li>
     {% endfor %}
     </ul>
 {% else %}

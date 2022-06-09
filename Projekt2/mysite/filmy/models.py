@@ -24,4 +24,4 @@ class film(models.Model):
     rodzaj=models.ForeignKey(rodzaj, on_delete=models.CASCADE)
     cena=models.ForeignKey(cena, on_delete=models.CASCADE)
     def __str__(self):
-        return '{} - {}'.format(self.rodzaj, self.cena)
+        return '{} - {} '.format(self.rodzaj, self.cena) 
