@@ -1,3 +1,12 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>git</title>
+</head>
+<body>
+<img src="{% static 'filmy/images/kodak2.png'%}">
 {% if index_list %}
     <ul>
     {% for index in index_list %}
@@ -9,3 +18,5 @@
 {% else %}
     <p>No films are available.</p>
 {% endif %}
+</body>
+</html>
