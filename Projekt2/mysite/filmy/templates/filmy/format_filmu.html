@@ -1,5 +1,6 @@
 {% if format_filmu_list %}
     <ul>
+        Dostępne formaty:
     {% for format_filmuview in format_filmu_list %}
     <li>
         <a href="/filmy/{{ format_filmuview.id }}/">{{ format_filmuview }}</a>

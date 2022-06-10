@@ -1,5 +1,6 @@
 {% if film_list %}
     <ul>
+        Filmy:
     {% for filmview in film_list %}
     <li>
         <a href="/filmy/{{filmview.id}}/">{{ filmview }}</a>
